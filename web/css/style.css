@@ -1,0 +1,411 @@
+body { 
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center;
+}
+
+.center {
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+    background-color: rgba(240, 228, 213, 0.9); /* Более светлый фиолетовый */
+    width: 1400px; /* Увеличение ширины блока */
+    padding: 40px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #9b4d96; /* Фиолетовый цвет для заголовков */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7043; /* Рыжий фон */
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 5px solid #d84b16; /* Темный рыжий для границы */
+    border-radius: 20px;
+}
+
+.title_header {
+    color: #fff;
+    font-size: 32px; /* Увеличение размера шрифта заголовка */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc80; /* Светлый рыжий при наведении */
+}
+
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+button {
+    background: #9b4d96; /* Фиолетовый для кнопок */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    min-width: 200px;
+}
+
+button:hover {
+    background: #ff7043; /* Рыжий при наведении */
+}
+
+#aboutCourses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#aboutCourses li {
+    background-color: #ffcc80; /* Светлый рыжий */
+    border: 1px solid #ff7043;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 18px; /* Увеличение размера текста */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 60%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tabs button {
+    background: #9b4d96;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 18px;
+}
+
+.tabs button:hover {
+    background: #ff7043;
+    color: white;
+}
+
+.tabs button.active {
+    background: #d84b16;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #9b4d96; /* Фиолетовый цвет для текста */
+    font-size: 18px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #9b4d96; /* Фиолетовая граница */
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #ff7043; /* Рыжая граница при фокусе */
+    outline: none;
+}
+
+.form_css{
+    display: block;
+    margin-right: 30px;
+}
+
+.close {
+    float: right;
+    font-size: 24px; /* Увеличение размера для крестика */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff1744;
+}
+
+body {
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center;
+}
+
+.center {
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+    background-color: rgba(240, 228, 213, 0.9); /* Более светлый фиолетовый */
+    width: 1400px; /* Увеличение ширины блока */
+    padding: 40px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #9b4d96; /* Фиолетовый цвет для заголовков */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7043; /* Рыжий фон */
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 5px solid #d84b16; /* Темный рыжий для границы */
+    border-radius: 20px;
+}
+
+.title_header {
+    color: #fff;
+    font-size: 32px; /* Увеличение размера шрифта заголовка */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc80; /* Светлый рыжий при наведении */
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course-card h2 {
+    color: #ff7043;
+    font-size: 24px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.course-card a {
+    color: #9b4d96;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.course-card a:hover {
+    color: #ff7043; /* Рыжий цвет при наведении */
+}
+
+.course-details {
+    background-color: rgba(240, 228, 213, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h1 {
+    color: #9b4d96;
+    font-size: 28px;
+}
+
+.course-details p {
+    font-size: 18px;
+    color: #555;
+}
+
+.course-details a {
+    color: #9b4d96;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.course-details a:hover {
+    color: #ff7043; /* Рыжий цвет при наведении */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff7043;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Общий стиль для форм */
+.rounded-form {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Стиль заголовков форм */
+.rounded-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Поля ввода */
+.rounded-form input[type="number"],
+.rounded-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Кнопки */
+.rounded-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.rounded-form button:hover {
+    background-color: #45a049;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .rounded-form {
+        padding: 15px;
+    }
+}
